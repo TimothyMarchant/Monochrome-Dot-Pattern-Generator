@@ -33,6 +33,9 @@
             this.AddHex = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Reset_Hex = new System.Windows.Forms.Button();
+            this.PatternLabel2 = new System.Windows.Forms.Label();
+            this.PatternLabel3 = new System.Windows.Forms.Label();
+            this.overfilled = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -46,15 +49,15 @@
             // 
             // PatternLabel
             // 
-            this.PatternLabel.Location = new System.Drawing.Point(110, 64);
+            this.PatternLabel.Location = new System.Drawing.Point(105, 9);
             this.PatternLabel.Name = "PatternLabel";
-            this.PatternLabel.Size = new System.Drawing.Size(1096, 1053);
+            this.PatternLabel.Size = new System.Drawing.Size(461, 1157);
             this.PatternLabel.TabIndex = 1;
             this.PatternLabel.Text = "insert_Patterns";
             // 
             // AddHex
             // 
-            this.AddHex.Location = new System.Drawing.Point(1654, 178);
+            this.AddHex.Location = new System.Drawing.Point(2007, 180);
             this.AddHex.Name = "AddHex";
             this.AddHex.Size = new System.Drawing.Size(115, 84);
             this.AddHex.TabIndex = 3;
@@ -64,7 +67,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1643, 447);
+            this.button1.Location = new System.Drawing.Point(2007, 448);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 65);
             this.button1.TabIndex = 2;
@@ -74,7 +77,7 @@
             // 
             // Reset_Hex
             // 
-            this.Reset_Hex.Location = new System.Drawing.Point(1654, 268);
+            this.Reset_Hex.Location = new System.Drawing.Point(2007, 270);
             this.Reset_Hex.Name = "Reset_Hex";
             this.Reset_Hex.Size = new System.Drawing.Size(115, 65);
             this.Reset_Hex.TabIndex = 4;
@@ -82,11 +85,39 @@
             this.Reset_Hex.UseVisualStyleBackColor = true;
             this.Reset_Hex.Click += new System.EventHandler(this.Reset_Hex_Click);
             // 
+            // PatternLabel2
+            // 
+            this.PatternLabel2.Location = new System.Drawing.Point(572, 9);
+            this.PatternLabel2.Name = "PatternLabel2";
+            this.PatternLabel2.Size = new System.Drawing.Size(461, 1157);
+            this.PatternLabel2.TabIndex = 5;
+            this.PatternLabel2.Text = "insert_Patterns";
+            // 
+            // PatternLabel3
+            // 
+            this.PatternLabel3.Location = new System.Drawing.Point(1039, 9);
+            this.PatternLabel3.Name = "PatternLabel3";
+            this.PatternLabel3.Size = new System.Drawing.Size(461, 1157);
+            this.PatternLabel3.TabIndex = 6;
+            this.PatternLabel3.Text = "insert_Patterns";
+            // 
+            // overfilled
+            // 
+            this.overfilled.Location = new System.Drawing.Point(1542, 1088);
+            this.overfilled.Name = "overfilled";
+            this.overfilled.Size = new System.Drawing.Size(121, 67);
+            this.overfilled.TabIndex = 7;
+            this.overfilled.Text = "FULL";
+            this.overfilled.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2134, 1164);
+            this.Controls.Add(this.overfilled);
+            this.Controls.Add(this.PatternLabel3);
+            this.Controls.Add(this.PatternLabel2);
             this.Controls.Add(this.Reset_Hex);
             this.Controls.Add(this.AddHex);
             this.Controls.Add(this.button1);
@@ -106,5 +137,8 @@
         private System.Windows.Forms.Button AddHex;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Reset_Hex;
+        private System.Windows.Forms.Label PatternLabel2;
+        private System.Windows.Forms.Label PatternLabel3;
+        private System.Windows.Forms.Label overfilled;
     }
 }

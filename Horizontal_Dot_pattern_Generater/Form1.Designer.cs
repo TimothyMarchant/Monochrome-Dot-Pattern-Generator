@@ -472,7 +472,6 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(1125, 362);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
@@ -484,7 +483,6 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(1145, 362);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
@@ -496,7 +494,6 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(1165, 362);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
@@ -508,7 +505,6 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(1185, 362);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
@@ -520,7 +516,6 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(1205, 362);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
@@ -532,7 +527,6 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1125, 387);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
@@ -544,7 +538,6 @@
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(1145, 387);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
@@ -556,7 +549,6 @@
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(1165, 387);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
@@ -568,7 +560,6 @@
             // 
             // label9
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(1185, 387);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
@@ -580,7 +571,6 @@
             // 
             // label10
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(1205, 387);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
@@ -592,7 +582,6 @@
             // 
             // label11
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(1125, 412);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
@@ -604,7 +593,6 @@
             // 
             // label12
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(1145, 412);
             this.label12.Margin = new System.Windows.Forms.Padding(0);
@@ -616,7 +604,6 @@
             // 
             // label13
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(1165, 412);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
@@ -628,7 +615,6 @@
             // 
             // label14
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(1185, 412);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
@@ -640,7 +626,6 @@
             // 
             // label15
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(1205, 412);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
@@ -652,7 +637,6 @@
             // 
             // label16
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(1125, 437);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
@@ -664,7 +648,6 @@
             // 
             // label17
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(1145, 437);
             this.label17.Margin = new System.Windows.Forms.Padding(0);
@@ -676,7 +659,6 @@
             // 
             // label18
             // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(1165, 437);
             this.label18.Margin = new System.Windows.Forms.Padding(0);
@@ -688,7 +670,6 @@
             // 
             // label19
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(1185, 437);
             this.label19.Margin = new System.Windows.Forms.Padding(0);
@@ -700,7 +681,6 @@
             // 
             // label20
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(1205, 437);
             this.label20.Margin = new System.Windows.Forms.Padding(0);
@@ -712,7 +692,6 @@
             // 
             // label21
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(1125, 462);
             this.label21.Margin = new System.Windows.Forms.Padding(0);
@@ -724,7 +703,6 @@
             // 
             // label22
             // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(1145, 462);
             this.label22.Margin = new System.Windows.Forms.Padding(0);
@@ -736,7 +714,6 @@
             // 
             // label23
             // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(1165, 462);
             this.label23.Margin = new System.Windows.Forms.Padding(0);
@@ -748,7 +725,6 @@
             // 
             // label24
             // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(1185, 462);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
@@ -760,7 +736,6 @@
             // 
             // label25
             // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(1205, 462);
             this.label25.Margin = new System.Windows.Forms.Padding(0);
@@ -772,7 +747,6 @@
             // 
             // label26
             // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(1125, 487);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
@@ -784,7 +758,6 @@
             // 
             // label27
             // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(1145, 487);
             this.label27.Margin = new System.Windows.Forms.Padding(0);
@@ -796,7 +769,6 @@
             // 
             // label28
             // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(1165, 487);
             this.label28.Margin = new System.Windows.Forms.Padding(0);
@@ -808,7 +780,6 @@
             // 
             // label29
             // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(1185, 487);
             this.label29.Margin = new System.Windows.Forms.Padding(0);
@@ -820,7 +791,6 @@
             // 
             // label30
             // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(1205, 487);
             this.label30.Margin = new System.Windows.Forms.Padding(0);
@@ -832,7 +802,6 @@
             // 
             // label31
             // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(1125, 512);
             this.label31.Margin = new System.Windows.Forms.Padding(0);
@@ -844,7 +813,6 @@
             // 
             // label32
             // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(1145, 512);
             this.label32.Margin = new System.Windows.Forms.Padding(0);
@@ -856,7 +824,6 @@
             // 
             // label33
             // 
-            this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(1165, 512);
             this.label33.Margin = new System.Windows.Forms.Padding(0);
@@ -868,7 +835,6 @@
             // 
             // label34
             // 
-            this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
             this.label34.Location = new System.Drawing.Point(1185, 512);
             this.label34.Margin = new System.Windows.Forms.Padding(0);
@@ -880,7 +846,6 @@
             // 
             // label35
             // 
-            this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label35.AutoSize = true;
             this.label35.Location = new System.Drawing.Point(1205, 512);
             this.label35.Margin = new System.Windows.Forms.Padding(0);
@@ -956,7 +921,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(1400, 721);
+            this.label43.Location = new System.Drawing.Point(1035, 554);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(77, 25);
             this.label43.TabIndex = 77;
@@ -965,7 +930,7 @@
             // HexOutput
             // 
             this.HexOutput.AutoSize = true;
-            this.HexOutput.Location = new System.Drawing.Point(1483, 721);
+            this.HexOutput.Location = new System.Drawing.Point(1118, 554);
             this.HexOutput.Name = "HexOutput";
             this.HexOutput.Size = new System.Drawing.Size(47, 25);
             this.HexOutput.TabIndex = 78;
@@ -994,7 +959,7 @@
             // 
             this.InvertColorButton.BackColor = System.Drawing.Color.Gray;
             this.InvertColorButton.ForeColor = System.Drawing.Color.Cyan;
-            this.InvertColorButton.Location = new System.Drawing.Point(899, 926);
+            this.InvertColorButton.Location = new System.Drawing.Point(299, 902);
             this.InvertColorButton.Name = "InvertColorButton";
             this.InvertColorButton.Size = new System.Drawing.Size(177, 70);
             this.InvertColorButton.TabIndex = 81;
@@ -1004,7 +969,7 @@
             // 
             // button36
             // 
-            this.button36.Location = new System.Drawing.Point(1287, 942);
+            this.button36.Location = new System.Drawing.Point(312, 1053);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(216, 83);
             this.button36.TabIndex = 82;
@@ -1014,7 +979,7 @@
             // 
             // MSBButton
             // 
-            this.MSBButton.Location = new System.Drawing.Point(91, 1044);
+            this.MSBButton.Location = new System.Drawing.Point(91, 1000);
             this.MSBButton.Name = "MSBButton";
             this.MSBButton.Size = new System.Drawing.Size(109, 55);
             this.MSBButton.TabIndex = 83;
@@ -1024,7 +989,7 @@
             // 
             // VerticalHortMode
             // 
-            this.VerticalHortMode.Location = new System.Drawing.Point(91, 1105);
+            this.VerticalHortMode.Location = new System.Drawing.Point(91, 1061);
             this.VerticalHortMode.Name = "VerticalHortMode";
             this.VerticalHortMode.Size = new System.Drawing.Size(215, 67);
             this.VerticalHortMode.TabIndex = 84;
@@ -1081,7 +1046,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3059, 1367);
+            this.ClientSize = new System.Drawing.Size(1527, 1152);
             this.Controls.Add(this.label45);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.label47);
