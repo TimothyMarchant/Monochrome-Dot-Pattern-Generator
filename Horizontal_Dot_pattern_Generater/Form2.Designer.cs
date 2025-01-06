@@ -1,0 +1,110 @@
+﻿namespace Horizontal_Dot_pattern_Generater
+{
+    partial class Form2
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.PatternLabel = new System.Windows.Forms.Label();
+            this.AddHex = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Reset_Hex = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Output:";
+            // 
+            // PatternLabel
+            // 
+            this.PatternLabel.Location = new System.Drawing.Point(110, 64);
+            this.PatternLabel.Name = "PatternLabel";
+            this.PatternLabel.Size = new System.Drawing.Size(1096, 1053);
+            this.PatternLabel.TabIndex = 1;
+            this.PatternLabel.Text = "insert_Patterns";
+            // 
+            // AddHex
+            // 
+            this.AddHex.Location = new System.Drawing.Point(1654, 178);
+            this.AddHex.Name = "AddHex";
+            this.AddHex.Size = new System.Drawing.Size(115, 84);
+            this.AddHex.TabIndex = 3;
+            this.AddHex.Text = "Add Hex String";
+            this.AddHex.UseVisualStyleBackColor = true;
+            this.AddHex.Click += new System.EventHandler(this.AddHex_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1643, 447);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 65);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Reset_Hex
+            // 
+            this.Reset_Hex.Location = new System.Drawing.Point(1654, 268);
+            this.Reset_Hex.Name = "Reset_Hex";
+            this.Reset_Hex.Size = new System.Drawing.Size(115, 65);
+            this.Reset_Hex.TabIndex = 4;
+            this.Reset_Hex.Text = "Reset";
+            this.Reset_Hex.UseVisualStyleBackColor = true;
+            this.Reset_Hex.Click += new System.EventHandler(this.Reset_Hex_Click);
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(2134, 1164);
+            this.Controls.Add(this.Reset_Hex);
+            this.Controls.Add(this.AddHex);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PatternLabel);
+            this.Controls.Add(this.label1);
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label PatternLabel;
+        private System.Windows.Forms.Button AddHex;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Reset_Hex;
+    }
+}
