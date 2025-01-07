@@ -24,7 +24,7 @@ namespace Horizontal_Dot_pattern_Generater
             InitializeComponent();
             HexString = new List<string>();
             SetupOutput();
-            TestPrintDotPatterns();
+            //TestPrintDotPatterns();
         }
         //for testing purposes will be removed in a final version.
         private void TestPrintDotPatterns()
