@@ -24,7 +24,7 @@ namespace Horizontal_Dot_pattern_Generater
             InitializeComponent();
             HexString = new List<string>();
             SetupOutput();
-            //TestPrintDotPatterns();
+            TestPrintDotPatterns();
         }
         //for testing purposes will be removed in a final version.
         private void TestPrintDotPatterns()
@@ -37,7 +37,7 @@ namespace Horizontal_Dot_pattern_Generater
         }
         private void SetupOutput()
         {
-            PatternLabel.Text= "struct CharPattern[" + HexString.Count() + "]= {\n";
+            PatternLabel.Text= "CharPattern[" + HexString.Count() + "]= {\n";
             PatternLabel2.Text = "";
             PatternLabel3.Text = "";
             overfilled.Text = "";
@@ -72,7 +72,7 @@ namespace Horizontal_Dot_pattern_Generater
                 for (uint j = 0; j < t.Length; j++)
                 {
                     entirestring[Stringindex] += t[j];
-                    if (i != t.Length - 1)
+                    if (j != t.Length - 1)
                     {
                         entirestring[Stringindex] += ",";
                     }
@@ -84,6 +84,8 @@ namespace Horizontal_Dot_pattern_Generater
                 else
                 {
                     entirestring[Stringindex] += "} //" + i;
+                    entirestring[Stringindex] += "\n}";
+                    break;
                 }
                 i++;
                 //increases if and only if divisible by
@@ -156,9 +158,9 @@ namespace Horizontal_Dot_pattern_Generater
             }
             //write to the file actually.
             StreamWriter writer = new StreamWriter(outputfile);
-            writer.WriteLine(PatternLabel.Text);
-            writer.WriteLine(PatternLabel2.Text);
-            writer.WriteLine(PatternLabel3.Text);
+            writer.Write(PatternLabel.Text);
+            writer.Write(PatternLabel2.Text);
+            writer.Write(PatternLabel3.Text);
             writer.Close(); 
         }
     }
