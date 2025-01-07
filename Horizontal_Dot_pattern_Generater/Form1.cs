@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*
+ * Made by Timothy Marchant
+ * For the person reading this, this project exists so I could write characters to a display without saving a full buffer for a display.
+ * In short we can make a table of dot patterns (in particular 8x8 pixel squares, where characters only occupy a 5x7 pixel area).
+ * For example in the common SSD1306 display (128x64), normally you could save an entire buffer using 1024 bytes of ram.
+ * But with this trick we can index a table for saved patterns and display each pattern for each 8x8 pixel square
+ * So instead of a 128x64 pixel display you have a 16x8 character display and your buffer can be an array of characters.  In this particular case this takes up 128 bytes of ram.
+ * This is clearly a good solution if your project only need to display text and you have plenty of programmable storage on your microcontroller 
+ * (I think when I did this last with a PIC, it took about 1000 bytes of programmable storage with the drivers needed for I2C and controlling the SSD1306).
+ * The current project I'm working on is for an epaper screen from Pervaise Displays.
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,11 +19,10 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace Horizontal_Dot_pattern_Generater
 {
-    
+    //First window.  Lets you make the dot pattern.  There is another window for actually saving them.  Or you can just make one pattern and copy and paste it into something else.
     public partial class Form1 : Form
     {
         private bool InvertedColor = false;
@@ -67,17 +77,21 @@ namespace Horizontal_Dot_pattern_Generater
                     uint temp = uint.Parse(ButtonArray[i].Text);
                     temp = (temp + 1) % 2;
                     ButtonArray[i].Text = temp.ToString();
+                    //do this math to get which bit we need to modify.
+                    int row = i / HexStringWidth;
+                    int col=i % HexStringWidth;
                     if (!InvertedColor)
                     {
                         if (temp == 1)
                         {
                             LabelArray[i].Text = "*";
-                            bitwrite(i / HexStringWidth, i % HexStringWidth);
+                            
+                            bitwrite(row, col);
                         }
                         else
                         {
                             LabelArray[i].Text = "";
-                            bitdelete(i / HexStringWidth, i % HexStringWidth);
+                            bitdelete(row, col);
                         }
                     }
                     else
@@ -85,12 +99,12 @@ namespace Horizontal_Dot_pattern_Generater
                         if (temp == 1)
                         {
                             LabelArray[i].Text = "";
-                            bitwrite(i / HexStringWidth, i % HexStringWidth);
+                            bitwrite(row, col);
                         }
                         else
                         {
                             LabelArray[i].Text = "*";
-                            bitdelete(i / HexStringWidth, i % HexStringWidth);
+                            bitdelete(row, col);
                         }
                     }
                     

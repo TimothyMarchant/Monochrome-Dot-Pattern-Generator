@@ -36,6 +36,9 @@
             this.PatternLabel2 = new System.Windows.Forms.Label();
             this.PatternLabel3 = new System.Windows.Forms.Label();
             this.overfilled = new System.Windows.Forms.Label();
+            this.OutputFile = new System.Windows.Forms.Button();
+            this.OutputFileName = new System.Windows.Forms.TextBox();
+            this.OutputFileLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +70,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(2007, 448);
+            this.button1.Location = new System.Drawing.Point(2007, 618);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 65);
             this.button1.TabIndex = 2;
@@ -110,11 +113,40 @@
             this.overfilled.Text = "FULL";
             this.overfilled.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // OutputFile
+            // 
+            this.OutputFile.Location = new System.Drawing.Point(1865, 455);
+            this.OutputFile.Name = "OutputFile";
+            this.OutputFile.Size = new System.Drawing.Size(115, 66);
+            this.OutputFile.TabIndex = 8;
+            this.OutputFile.Text = "Output to file";
+            this.OutputFile.UseVisualStyleBackColor = true;
+            this.OutputFile.Click += new System.EventHandler(this.OutputFile_Click);
+            // 
+            // OutputFileName
+            // 
+            this.OutputFileName.Location = new System.Drawing.Point(1741, 420);
+            this.OutputFileName.Name = "OutputFileName";
+            this.OutputFileName.Size = new System.Drawing.Size(381, 29);
+            this.OutputFileName.TabIndex = 9;
+            // 
+            // OutputFileLabel
+            // 
+            this.OutputFileLabel.AutoSize = true;
+            this.OutputFileLabel.Location = new System.Drawing.Point(1860, 338);
+            this.OutputFileLabel.Name = "OutputFileLabel";
+            this.OutputFileLabel.Size = new System.Drawing.Size(161, 25);
+            this.OutputFileLabel.TabIndex = 10;
+            this.OutputFileLabel.Text = "Output File name";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2134, 1164);
+            this.Controls.Add(this.OutputFileLabel);
+            this.Controls.Add(this.OutputFileName);
+            this.Controls.Add(this.OutputFile);
             this.Controls.Add(this.overfilled);
             this.Controls.Add(this.PatternLabel3);
             this.Controls.Add(this.PatternLabel2);
@@ -140,5 +172,8 @@
         private System.Windows.Forms.Label PatternLabel2;
         private System.Windows.Forms.Label PatternLabel3;
         private System.Windows.Forms.Label overfilled;
+        private System.Windows.Forms.Button OutputFile;
+        private System.Windows.Forms.TextBox OutputFileName;
+        private System.Windows.Forms.Label OutputFileLabel;
     }
 }

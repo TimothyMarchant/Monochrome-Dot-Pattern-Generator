@@ -6,10 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Horizontal_Dot_pattern_Generater
 {
+    //general output window.  Allows multiple patterns to be saved.
     public partial class Form2 : Form
     {
         private Form1 form1;
@@ -23,6 +26,7 @@ namespace Horizontal_Dot_pattern_Generater
             SetupOutput();
             //TestPrintDotPatterns();
         }
+        //for testing purposes will be removed in a final version.
         private void TestPrintDotPatterns()
         {
             for (int i = 0; i < 3 * maxstringheight; i++)
@@ -115,6 +119,47 @@ namespace Horizontal_Dot_pattern_Generater
         {
             HexString.Clear();
             SetupOutput();
+        }
+        const int FileExtensionindex = 1;
+        //output an actual file with the array saved.
+        private void OutputFile_Click(object sender, EventArgs e)
+        {
+
+            string outputfile = OutputFileName.Text;
+            string[] CheckIfFileType = outputfile.Split('.');
+            //invalid file type, and I don't feel like dealing with these cases considering the main user (probably the ONLY user) of this application won't make such mistakes unintentionally.
+            if (CheckIfFileType.Length > 2)
+            {
+                //the sleep is a delay so that the text doesn't change back too fast.  There's definitely a better way to do this than using a blocking delay. but it is what it is.
+                OutputFile.Text = "INVALID FILE NAME";
+                Thread.Sleep(1000);
+                OutputFile.Text = "Output to file";
+                return;
+            }
+            //default file type
+            else if (CheckIfFileType.Length == 1)
+            {
+                outputfile += ".h";
+            }
+            //only supports 3 formats, because I don't want to deal with weird file extensions.
+            else if (CheckIfFileType.Length == 2)
+            {
+                if (CheckIfFileType[FileExtensionindex]!="txt"&& CheckIfFileType[FileExtensionindex] != "c"
+                    && CheckIfFileType[FileExtensionindex] != "h")
+                {
+                    //if not a supported file type print this.
+                    OutputFile.Text = "Unsupported file extension";
+                    Thread.Sleep(1000);
+                    OutputFile.Text = "Output to file";
+                    return;
+                }
+            }
+            //write to the file actually.
+            StreamWriter writer = new StreamWriter(outputfile);
+            writer.WriteLine(PatternLabel.Text);
+            writer.WriteLine(PatternLabel2.Text);
+            writer.WriteLine(PatternLabel3.Text);
+            writer.Close(); 
         }
     }
 }
