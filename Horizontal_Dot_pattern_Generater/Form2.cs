@@ -61,8 +61,13 @@ namespace Horizontal_Dot_pattern_Generater
             //we can only fit so many hex strings onto one label, so we have a maximum of 3 with height 46 strings.
             string[] entirestring =new string[3];
             int Stringindex = 0;
+            string structname = StructName.Text;
+            if (structname.Length == 0)
+            {
+                structname = "DefaultName";
+            }
             //This is how an array of struts are meant to be declared in the 99 standard of C.
-            entirestring[Stringindex] = "CharPattern InsertName[" + HexString.Count() + "]= {\n";
+            entirestring[Stringindex] = "CharPattern "+structname+"[" + HexString.Count() + "]= {\n";
             uint i = 0;
             //do a lot of catanations in this loop.
             foreach (string s in HexString)
@@ -128,6 +133,11 @@ namespace Horizontal_Dot_pattern_Generater
         {
 
             string outputfile = OutputFileName.Text;
+            if (outputfile.Length == 0)
+            {
+                //default output file name.
+                outputfile = "ASCII_Table.h";
+            }
             string[] CheckIfFileType = outputfile.Split('.');
             //invalid file type, and I don't feel like dealing with these cases considering the main user (probably the ONLY user) of this application won't make such mistakes unintentionally.
             if (CheckIfFileType.Length > 2)
@@ -156,7 +166,7 @@ namespace Horizontal_Dot_pattern_Generater
                     return;
                 }
             }
-            //write to the file actually.
+            //write to the file.
             StreamWriter writer = new StreamWriter(outputfile);
             writer.Write(PatternLabel.Text);
             writer.Write(PatternLabel2.Text);

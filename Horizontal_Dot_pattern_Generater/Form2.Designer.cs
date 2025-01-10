@@ -39,6 +39,8 @@
             this.OutputFile = new System.Windows.Forms.Button();
             this.OutputFileName = new System.Windows.Forms.TextBox();
             this.OutputFileLabel = new System.Windows.Forms.Label();
+            this.StructName = new System.Windows.Forms.TextBox();
+            this.StructNameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -139,11 +141,29 @@
             this.OutputFileLabel.TabIndex = 10;
             this.OutputFileLabel.Text = "Output File name";
             // 
+            // StructName
+            // 
+            this.StructName.Location = new System.Drawing.Point(1801, 571);
+            this.StructName.Name = "StructName";
+            this.StructName.Size = new System.Drawing.Size(260, 29);
+            this.StructName.TabIndex = 11;
+            // 
+            // StructNameLabel
+            // 
+            this.StructNameLabel.AutoSize = true;
+            this.StructNameLabel.Location = new System.Drawing.Point(1863, 543);
+            this.StructNameLabel.Name = "StructNameLabel";
+            this.StructNameLabel.Size = new System.Drawing.Size(117, 25);
+            this.StructNameLabel.TabIndex = 12;
+            this.StructNameLabel.Text = "Struct name";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2134, 1164);
+            this.Controls.Add(this.StructNameLabel);
+            this.Controls.Add(this.StructName);
             this.Controls.Add(this.OutputFileLabel);
             this.Controls.Add(this.OutputFileName);
             this.Controls.Add(this.OutputFile);
@@ -175,5 +195,7 @@
         private System.Windows.Forms.Button OutputFile;
         private System.Windows.Forms.TextBox OutputFileName;
         private System.Windows.Forms.Label OutputFileLabel;
+        private System.Windows.Forms.TextBox StructName;
+        private System.Windows.Forms.Label StructNameLabel;
     }
 }
