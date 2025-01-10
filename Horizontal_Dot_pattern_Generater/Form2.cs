@@ -67,7 +67,7 @@ namespace Horizontal_Dot_pattern_Generater
                 structname = "DefaultName";
             }
             //This is how an array of struts are meant to be declared in the 99 standard of C.
-            entirestring[Stringindex] = "CharPattern "+structname+"[" + HexString.Count() + "]= {\n";
+            entirestring[Stringindex] = "const CharPattern "+structname+"[" + HexString.Count() + "]= {\n";
             uint i = 0;
             //do a lot of catanations in this loop.
             foreach (string s in HexString)
@@ -91,7 +91,7 @@ namespace Horizontal_Dot_pattern_Generater
                 else
                 {
                     entirestring[Stringindex] += "} //" + i;
-                    entirestring[Stringindex] += "\n}";
+                    entirestring[Stringindex] += "\n};";
                     break;
                 }
                 i++;
