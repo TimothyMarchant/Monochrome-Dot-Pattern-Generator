@@ -82,10 +82,12 @@ namespace Horizontal_Dot_pattern_Generater
                         entirestring[Stringindex] += ",";
                     }
                 }
+                //put comma for each array entry before the last entry
                 if (i != HexString.Count() - 1)
                 {
                     entirestring[Stringindex] += "}, //" + i+"\n";
                 }
+                //last element
                 else
                 {
                     entirestring[Stringindex] += "} //" + i;
@@ -93,7 +95,7 @@ namespace Horizontal_Dot_pattern_Generater
                     break;
                 }
                 i++;
-                //increases if and only if divisible by
+                //increases if and only if divisible by maxstringheight
                 if (i % maxstringheight == 0&&Stringindex!=2)
                 {
                     Stringindex++;

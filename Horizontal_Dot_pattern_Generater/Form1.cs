@@ -42,6 +42,7 @@ namespace Horizontal_Dot_pattern_Generater
         public Form1()
         {
             InitializeComponent();
+            //fill arrays.
             ButtonArray =new [] { button1,button2, button3,button4,button5,button6,button7,button8,button9,button10,button11,button12,button13,button14,button15,
             button16,button17,button18,button19,button20,button21,button22,button23,button24,button25,button26,button27,button28,button29,button30,
             button31,button32,button33,button34,button35};
@@ -51,6 +52,7 @@ namespace Horizontal_Dot_pattern_Generater
             pixels = new uint[7];
             HorizontalBytesLabels = new[] { label36, label37, label38, label39, label40, label41, label42 };
             VerticalBytesLabels = new[] { label45, label46, label47, label48,label49 };
+            //remove text on top with this for loop on startup.  Default is horizontal mode.
             for (int i = 0; i < VerticalBytesLabels.Length; i++)
             {
                 VerticalBytesLabels[i].Text = "";
@@ -113,8 +115,7 @@ namespace Horizontal_Dot_pattern_Generater
             }
             UpdateHex();
         }
-        //the bytes we are sending are over SPI which is most significant bit first.
-        //for this particular display each byte is 8 pixels horizontally, so the smallest temp can be is 0x08.
+        //starting bit position, depends on whether or not we are concerned with most significant bit or least significant bit.
         private const uint MSBmode= 0x80;
         private const uint LSBmode = 0x01;
         private void bitwrite(int row, int col)
@@ -182,6 +183,7 @@ namespace Horizontal_Dot_pattern_Generater
                 }
             }
         }
+        //reset the form and make it ready for inputting the next pattern.
         private void Reset_Form()
         {
             for (int i = 0; i < ButtonArray.Length; i++)
@@ -212,6 +214,7 @@ namespace Horizontal_Dot_pattern_Generater
         {
             Reset_Form();
         }
+        //updates hex string
         private void UpdateHex()
         {
             
@@ -228,7 +231,7 @@ namespace Horizontal_Dot_pattern_Generater
             HexOutput.Text = Output;
             hexstring = Output;
         }
-        //black and white only (or for other displays 0 or 1)
+        //black and white only (or for other displays 0 or 1; for example the SSD1306 ON and OFF)
         private void InvertColorButton_Click(object sender, EventArgs e)
         {
             if (!InvertedColor)
