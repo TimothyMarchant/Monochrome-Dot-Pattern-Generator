@@ -1,1 +1,2 @@
-Code examples of using the dot patterns generated.  Also a complete ASCII table
+Code examples of using the dot patterns generated.  Also a complete ASCII table  
+This table is meant for MSB (most significant bit) horizontal mode (that is each byte sets the pixels horizontally instead of vertically).
