@@ -1,1 +1,2 @@
-# Horizontal_Dot_pattern_Generater
+This project was made for making character patterns for an embedded project.  The project requires that I need to display text only (or some patterns).  The display I was using would normally require a 5000 byte buffer, but if we save a table of all our ASCII characters we can get away with a 625 character buffer.  
+Eventually I made this program more general for multiple displays (MSB, LSB, etc).  Feel free to use this in your own projects
